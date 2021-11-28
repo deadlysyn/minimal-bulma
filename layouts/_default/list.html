@@ -1,6 +1,6 @@
 {{ partial "header" . }}
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-max-desktop has-text-centered">
     <h3 class="title is-3">{{ .Title }}</h3>
     {{ range (.Paginator 5).Pages }} {{ partial "list-item" . }} {{ end }}
   </div>
