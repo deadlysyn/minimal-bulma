@@ -1,5 +1,4 @@
-<div class="item">
-
+<div class="container is-max-desktop">
     {{ $.Scratch.Set "link" .RelPermalink }}
     {{ with .Params.repo }}
         {{ $repoHost := default "github" $.Params.repoHost }}
@@ -12,12 +11,9 @@
         {{ end }}
     {{ end }}
     {{ with .Params.link }} {{ $.Scratch.Set "link" . }} {{ end }}
-
     {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subheader" }}
     {{ with .Description }} {{ $.Scratch.Set "subheader" . }} {{ end }}
-
-    <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h4>
-    <h5>{{ $.Scratch.Get "subheader" }}</h5>
+    <a class="is-size-4" href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></br>
+    {{ $.Scratch.Get "subheader" }}<br/>
     {{ partial "tags" . }}
-
 </div>
