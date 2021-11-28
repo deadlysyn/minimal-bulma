@@ -2,9 +2,18 @@
 <section class="section">
   <div class="container has-text-centered">
     {{ with .Site.Params.profilePic }} <img class="profile" src="{{ . }}"> {{ end }}
-    <h1 class="title is-1">{{ .Site.Title }}</h1>
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <h1 class="title is-1">{{ .Title }}</h1>
     <h4 class="title is-4">{{ markdownify .Site.Params.Description }}</h4>
-    {{ with .Content }} <div class="homepage-content text-justify">{{ . }}</div> {{ end }}
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    {{ range (.Paginator 5).Pages }} {{ partial "list-item" . }} {{ end }}
+    {{ partial "paginator" . }}
   </div>
 </section>
 {{ partial "footer" . }}
