@@ -10,3 +10,8 @@ min_version = "0.24.1"
 [author]
   name = "Mike Hoskins"
   homepage = "https://deadlysyn.com"
+
+[original]
+  author = "Calin Tataru"
+  homepage = "https://calintat.github.io"
+  repo = "https://github.com/calintat/minimal"
