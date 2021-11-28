@@ -1,3 +1,3 @@
 {{ range .Params.tags }}
-<a class="item-tag" href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
+<span class="tag"><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a></span>
 {{ end }}
