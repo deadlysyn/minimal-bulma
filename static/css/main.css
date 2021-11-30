@@ -2,18 +2,9 @@ html, body {
     height: 100%;
 }
 
-body {
-    /* display: flex; */
-    /* text-align: center; */
-    /* flex-direction: column; */
+code {
+    color: var(--accent) !important;
 }
-
-/* main { */
-/*     margin: auto; */
-/*     padding: 25px; */
-/*     flex: 1 0 auto; */
-/*     max-width: 750px; */
-/* } */
 
 img {
     max-width: 100%;
@@ -45,11 +36,7 @@ a.icon:hover {
 
 a:hover {
     color: var(--accent) !important;
-    text-decoration: underline;
-}
-
-code {
-    color: var(--accent) !important;
+    text-decoration: underline dotted;
 }
 
 /* Paginator */
