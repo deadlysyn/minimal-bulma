@@ -7,7 +7,7 @@
   </div>
 </section>
 <section class="section">
-  <div class="container is-max-desktop has-text-left">{{ .Content }}</div>
+  <div class="container is-max-desktop">{{ .Content }}</div>
     {{ $related := first 3 (where (where (where .Site.Pages.ByDate.Reverse ".Type" "==" "post") ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
     {{ if $related }}
         <h4 class="title is-4">Related</h4>
