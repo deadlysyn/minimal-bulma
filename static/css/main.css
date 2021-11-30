@@ -3,17 +3,17 @@ html, body {
 }
 
 body {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
+    /* display: flex; */
+    /* text-align: center; */
+    /* flex-direction: column; */
 }
 
-main {
-    margin: auto;
-    padding: 25px;
-    flex: 1 0 auto;
-    max-width: 750px;
-}
+/* main { */
+/*     margin: auto; */
+/*     padding: 25px; */
+/*     flex: 1 0 auto; */
+/*     max-width: 750px; */
+/* } */
 
 img {
     max-width: 100%;
@@ -44,6 +44,11 @@ a.icon:hover {
 }
 
 a:hover {
+    color: var(--accent) !important;
+    text-decoration: underline;
+}
+
+code {
     color: var(--accent) !important;
 }
 
