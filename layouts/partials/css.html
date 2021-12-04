@@ -7,6 +7,12 @@
     :root {
         --accent: {{ .Site.Params.accent | default "#2196F3" }};
     }
+
+    .highlight {
+        --accent: default;
+        padding-bottom: 20px;
+    }
+
 </style>
 <!-- main -->
 <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
