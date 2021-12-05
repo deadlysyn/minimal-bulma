@@ -1,4 +1,4 @@
-<div class="container is-max-desktop content">
+<div class="container is-max-desktop has-text-centered content">
     {{ $.Scratch.Set "link" .RelPermalink }}
     {{ with .Params.link }} {{ $.Scratch.Set "link" . }} {{ end }}
     {{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") | $.Scratch.Set "subheader" }}
