@@ -1,13 +1,13 @@
 {{ if or .Paginator.HasPrev .Paginator.HasNext }}
-<div class="container is-max-desktop">
+<div class="container is-max-desktop has-text-centered is-size-2">
   {{ if .Paginator.HasPrev }}
     <a class="icon" href="{{ .Paginator.Prev.URL }}" rel="prev">
-      <i class="fa-solid fa-chevron-left"></i>
+      <i class="fa-solid fa-caret-square-left"></i>
     </a>
   {{ end }}
   {{ if .Paginator.HasNext }}
     <a class="icon" href="{{ .Paginator.Next.URL }}" rel="next">
-      <i class="fa-solid fa-chevron-right"></i>
+      <i class="fa-solid fa-caret-square-right"></i>
     </a>
   {{ end }}
 </div>
